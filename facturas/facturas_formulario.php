@@ -1,9 +1,8 @@
 <html>
 <head>
-<!--- <LINK REL="stylesheet" TYPE="text/css" HREF="../estilos.css"> --->
-<title>Crear Facturas</title>
+<title>M&oacute;dulo Crear Facturas</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link rel="stylesheet" href="../estilos_login.css">
+<link rel="stylesheet" href="../estilos/estilos_login.css">
 <script type="text/javascript">
 icremento =0;
 function crear(obj) {
@@ -109,21 +108,10 @@ function borrar(obj) {
 </script>
 </head>
 
-<body>
-<div class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="logo span4">
-                        <h1 align="center"><a href="">M&oacute;dulo de Facturaci&oacute;n</a></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="body"><body>
+<div class="header"><h1 align="center">M&oacute;dulo de Facturaci&oacute;n</h1></div>
 		
-<div class="register-container container">
-            <div class="row">
-                <center>
-                <div class="register" style="width: 570px;">
+<div class="register form">
 <form name="form1" method="POST" action="facturas_alta.php">
 <table>
 <tr><td>Seleccionar Tipo de Factura:</td><td>
@@ -155,9 +143,6 @@ echo '<option value="'.$row['ID_CLIENTES'].'">'.$row['PERSONAS_AYN'].' -Document
 <input name="save" type="submit" value="Grabar" onclick="enviar(this)">
 </fieldset>
 </form>
- 					</div>
-                </center>
-            </div>
-        </div>
-</body>
+</div>
+</body></div>
 </html>

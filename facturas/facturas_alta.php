@@ -1,3 +1,10 @@
+<html>
+<head>
+<title>Control Alta Facturas</title>
+<link rel="stylesheet" href="../estilos/estilos_login.css">
+</head>
+
+<div class="body"><body>
 <?php
 $conexion=mysql_connect("localhost","root","") or die("Error de Conexion");
 mysql_select_db("facturacion",$conexion) or die("Error de Conexion a la BD");
@@ -107,6 +114,8 @@ mysql_query($sql,$conexion) or die("Error de SQL");
 $total=$precio1+$precio2+$precio3+$precio4+$precio5+$precio6+$precio7+$precio8+$precio9+$precio10;
 $sql_factura="INSERT INTO `facturas` VALUES($id_factura,1,CURDATE(),'$FACTURAS_TIPO',$total);";
 mysql_query($sql_factura,$conexion) or die("Error de SQL");
-echo "Factura generada correctamente";
-
+echo "Factura generada correctamente.";
+print "<meta http-equiv=Refresh content=\"2 ; url=facturas_formulario.php\">"
 ?>
+</body></div>
+</html>

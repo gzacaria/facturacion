@@ -3,10 +3,13 @@
 <head>
 <title>Editar Cliente</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../estilos_login.css">
 </head>
 
+<div class="body">
 <body>
-<h1>Editar Cliente</h1>
+<div class="header"><h1>Editar Cliente</h1></div>
+<div class="register form">
 <form action="clientes_update.php" method="post">
 <?php
 $conexion = mysql_connect ("localhost","root","") or die ('Error de Sql');
@@ -39,6 +42,7 @@ echo 'No existen datos para esa Entidad';
 ?>
 
 </form>
-
+</div>
 </body>
+</div>
 </html>

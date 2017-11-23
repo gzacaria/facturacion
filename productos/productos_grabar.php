@@ -1,3 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Control M&oacute;dulo Eliminaci&oacute;n Personas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css"
+</head>
+
+<div class="body"><body>
 <?php
 $conexion=mysql_connect("localhost","root","") or die("Error de Conexion");
 mysql_select_db("facturacion",$conexion) or die("Error de Conexion a la BD");
@@ -53,4 +62,7 @@ $sql="INSERT INTO `productos`(
 ($proveedor_5,21,$descuentos_5,'$descripcion_5',$pu_5,$stock_5,'$obs_5');";
 mysql_query($sql,$conexion) or die("Error de SQL");
 echo "Productos cargados correctamente";
+print "<meta http-equiv=Refresh content=\"2 ; url=productos_reporte.php\">"
 ?>
+</body></div>
+</html>

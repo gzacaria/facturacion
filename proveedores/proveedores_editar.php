@@ -1,12 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Documento sin t&iacute;tulo</title>
+<title>Editar Proveedor</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
 </head>
 
+<div class="body">
 <body>
-<h1>Editar Entidad</h1>
+<div class="header"><h1>Editar Proveedor</h1></div>
+<div class="register form">
 <form action="proveedores_actualizar.php" method="POST">
 <?php
 $conexion =mysql_connect ("localhost","root","") or die ('Error de conexion al servidor');
@@ -17,7 +20,7 @@ if ($reg =mysql_fetch_array($registros))
 ?>
 <table align="center">
 <tr>
-<td>Editar Descripcion: </td>
+<td>Editar Raz&oacute;n Social: </td>
 <td><input type="text" name="PROVEEDORES_DESCRIPCION" value ="<?php echo $reg['PROVEEDORES_DESCRIPCION']?>"></td>
 </tr>
 <tr>
@@ -42,6 +45,7 @@ echo 'No existen datos para esa entidad';
 }
 ?>
 </form>
-
+</div>
 </body>
+</div>
 </html>

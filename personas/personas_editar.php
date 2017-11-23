@@ -3,11 +3,14 @@
 <head>
 <title>Editar Entidad</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
 </head>
 
+<div class="body">
 <body>
-<h1>Editar Entidad</h1>
-<form action="personas_update.php" method="post">
+<div class="header"><h1>Editar Entidad</h1></div>
+<div class="register form">
+<form action="personas_update.php" method="post" align="center">
 <?php
 $conexion = mysql_connect ("localhost","root","") or die ('Error de Sql');
 mysql_select_db("facturacion",$conexion) or die('Error en la conexion a la BD');
@@ -65,6 +68,7 @@ echo 'No existen datos para esa Entidad';
 ?>
 
 </form>
-
+</div>
 </body>
+</div>
 </html>

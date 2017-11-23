@@ -2,13 +2,15 @@
 <html>
 <head>
 <title>M&oacute;dulo de Carga de Clientes</title>
+<link rel="stylesheet" href="../estilos/estilos_login.css">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 </head>
 
+<div class="body">
 <body>
-<h1 align="center">M&oacute;dulo de Carga de Clientes</h1>
-<form action="alta_clientes.php" method="post">
-<table>
+<div class="header"><h1 align="center">M&oacute;dulo de Carga de Clientes</h1></div>
+<div class="register form"><form action="clientes_alta.php" method="post">
+<table align="center">
 <td>Seleccionar persona</td>
 <td>
 <select name="RELA_PERSONAS">
@@ -29,5 +31,7 @@ echo '<option value="'.$row['ID_PERSONAS'].'">'.$row['PERSONAS_AYN'].'-Documento
 <tr><td><input type="submit" value="Enviar"></td></tr>
 </table>
 </form>
+</div>
 </body>
+</div>
 </html>

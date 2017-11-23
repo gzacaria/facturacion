@@ -1,11 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_reporte.css">
+<link rel="stylesheet" href="../estilos/estilos_login.css">
 <title>Reporte de Personas</title>
-<h1 align="center">Reporte de Clientes</h1>
+<div class="header"><h1 align="center">Reporte de Clientes</h1></div>
 </head>
 
+<div class="body">
 <body>
 <?php
 $conexion=mysql_connect("localhost","root","") or die("Error de Conexi&oacute;n");
@@ -13,15 +15,20 @@ mysql_select_db("facturacion",$conexion) or die("Error de Conexi&oacute;n a la B
 $sql="SELECT * FROM vista_clientes_personas WHERE CLIENTES_ESTADO NOT LIKE '%B%';";
 $registros=mysql_query($sql,$conexion) or die("Error de SQL");
 
-echo '<div id="tabla">';
+echo '<div class="datagrid">';
 echo '<table align="center">';
+echo '<thead>';
 echo'<tr><th>Apellido y Nombre</th>
 <th>Documento</th>
 <th>Estado Persona</th>
 <th>Estado Clientes</th>
 <th>Fecha Clientes</th>
 <th>Monto de Mora</th>
+<th></th>
+<th></th>
+<th></th>
 </tr>';
+echo '</thead>';
 while($row=mysql_fetch_array($registros))
 {
 echo '<tr>';
@@ -57,6 +64,8 @@ echo '</tr>';
 echo '</table>';
 ?>
 </div>
-<div align="center"><a href="clientes_formulario_alta.php">Agregar Cliente</a></div>
+<br>
+<div class="links"><a href="clientes_formulario_alta.php">Agregar Cliente</a></div>
 </body>
+</div>
 </html>

@@ -3,16 +3,17 @@
 <head>
 <title>Control M&oacute;dulo Eliminaci&oacute;n Personas</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css"
 </head>
 
-<body>
+<div class="body"><body>
 <?php
 $conexion=mysql_connect("localhost","root","") or die('Error de SQL');
 mysql_select_db("facturacion",$conexion) or die('Error en la Conexion a la BD');
 mysql_query("
 DELETE FROM `personas` WHERE `ID_PERSONAS`=$_REQUEST[ID_PERSONAS];",$conexion) or die('Error SQL');
-echo 'Eliminaci&oacute;n realizada con &eacute;xito';
+echo 'Eliminaci&oacute;n Realizada con &Eacute;xito';
 print "<meta http-equiv=Refresh content=\"2 ; url=personas_reporte.php\">"; 
 ?>
-</body>
+</body></div>
 </html>

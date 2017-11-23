@@ -5,12 +5,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
 <script type="text/javascript" src="../jquery.easyui.min.js"></script>
-<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
 </head>
 
+<div class="body">
 <body>
-<h1 align="center">M&oacute;dulo de Carga de Personas</h1>
-<form action="alta_personas.php" method="post">
+<div class="header"><h1 align="center">M&oacute;dulo de Carga de Personas</h1></div>
+<div class="register form">
+<form action="personas_alta.php" method="post">
 <table align="center">
 <tr>
 <td>Ingresar Apellido y Nombre:</td>
@@ -56,5 +58,7 @@
 </tr>
 </table>
 </form>
+</div>
 </body>
+</div>
 </html>

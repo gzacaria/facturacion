@@ -1,3 +1,10 @@
+<html>
+<head>
+<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
+<title>Controlador Alta</title>
+</head>
+
+<div class="body"><body>
 <?php
 $conexion=mysql_connect("localhost","root","") or die("Error en la conexion al servidor");
 mysql_select_db("facturacion",$conexion) or die("Error en la conexion a la base de datos");
@@ -12,3 +19,5 @@ mysql_close($conexion);
 echo "Carga realizada correctamente";
 print "<meta http-equiv=Refresh content=\"2 ; url=clientes_reporte.php\">";
 ?>
+</body></div>
+</html>

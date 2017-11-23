@@ -1,8 +1,9 @@
 <html>
 <head>
-<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos.css">
 <title>Añadir Productos</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_reporte.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
 <script type="text/javascript">
 incremento =0;
 function crear(obj) {
@@ -104,13 +105,17 @@ function borrar(obj) {
 </script>
 </head>
 
+<div class="body">
 <body>
-<h1 align="center">M&oacute;dulo Nuevo Producto </h1>
+<div class="header"><h1 align="center">M&oacute;dulo Nuevo Producto </h1></div>
+<div class="register form">
 <form name="form1" method="POST" action="productos_grabar.php">
 <fieldset id="field">
 <input type="button" value="A&ntilde;adir" onclick="crear(this)">
 <input name="save" type="submit" value="Grabar" onclick="enviar(this)">
 </fieldset>
 </form>
+</div>
 </body>
+</div>
 </html>
