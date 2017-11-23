@@ -11,7 +11,7 @@
 <body>
 <h1 align="center">M&oacute;dulo de Carga de Personas</h1>
 <form action="alta_personas.php" method="post">
-<table>
+<table align="center">
 <tr>
 <td>Ingresar Apellido y Nombre:</td>
 <td><input type="text" name="PERSONAS_AYN" class="easyui-validatebox" required="true"></td>
@@ -25,7 +25,7 @@
 <td><input type="date" name="PERSONAS_FEC_NAC"></td>
 </tr>
 <tr>
-<td>Ingresar Nº de Tel&eacute;fono:</td>
+<td>Ingresar Nro. de Tel&eacute;fono:</td>
 <td><input type="text" name="PERSONAS_TELEFONO" class="easyui-numberbox" required="true"></td>
 </tr>
 <tr>

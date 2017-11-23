@@ -52,5 +52,5 @@ $sql="INSERT INTO `productos`(
 ($proveedor_4,21,$descuentos_4,'$descripcion_4',$pu_4,$stock_4,'$obs_4'),
 ($proveedor_5,21,$descuentos_5,'$descripcion_5',$pu_5,$stock_5,'$obs_5');";
 mysql_query($sql,$conexion) or die("Error de SQL");
-
+echo "Productos cargados correctamente";
 ?>

@@ -2,18 +2,19 @@
 <html>
 <head>
 <LINK REL="stylesheet" TYPE="text/css" HREF="../estilos.css">
-<title>Reporte de Clientes</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Reporte de Personas</title>
+<h1 align="center">Reporte de Clientes</h1>
 </head>
 
 <body>
-<h1 align="center">Reporte de Clientes</h1>
 <?php
 $conexion=mysql_connect("localhost","root","") or die("Error de Conexi&oacute;n");
 mysql_select_db("facturacion",$conexion) or die("Error de Conexi&oacute;n a la BD");
 $sql="SELECT * FROM vista_clientes_personas WHERE CLIENTES_ESTADO NOT LIKE '%B%';";
 $registros=mysql_query($sql,$conexion) or die("Error de SQL");
-echo '<table>';
+
+echo '<div id="tabla">';
+echo '<table align="center">';
 echo'<tr><th>Apellido y Nombre</th>
 <th>Documento</th>
 <th>Estado Persona</th>
@@ -55,6 +56,7 @@ echo '</tr>';
 }
 echo '</table>';
 ?>
-<a href="formulario_alta_clientes.php">Agregar Cliente</a>
+</div>
+<div align="center"><a href="clientes_formulario_alta.php">Agregar Cliente</a></div>
 </body>
 </html>
