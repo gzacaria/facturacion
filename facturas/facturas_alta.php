@@ -1,99 +1,91 @@
 <html>
+
 <head>
-<title>Control Alta Facturas</title>
-<link rel="stylesheet" href="../estilos/estilos_login.css">
+	<title>Control Alta Facturas</title>
+	<link rel="stylesheet" href="../estilos/estilos_login.css">
 </head>
 
-<div class="body"><body>
-<?php
-$conexion=mysql_connect("localhost","root","") or die("Error de Conexion");
-mysql_select_db("facturacion",$conexion) or die("Error de Conexion a la BD");
+<div class="body">
 
-$x1=$_POST["text"][0]; //cantidad 1
-if($x1=="")
-{
-$x1=0;
-}
-$x2=$_POST["text"][1];
-if($x2=="")
-{
-$x2=0;
-}
-$x3=$_POST["text"][2];
-if($x3=="")
-{
-$x3=0;
-}
-$x4=$_POST["text"][3];
-if($x4=="")
-{
-$x4=0;
-}
-$x5=$_POST["text"][4];
-if($x5=="")
-{
-$x5=0;
-}
-$x6=$_POST["text"][5];
-if($x6=="")
-{
-$x6=0;
-}
-$x7=$_POST["text"][6];
-if($x7=="")
-{
-$x7=0;
-}
-$x8=$_POST["text"][7];
-if($x8=="")
-{
-$x8=0;
-}
-$x9=$_POST["text"][8];
-if($x9=="")
-{
-$x9=0;
-}
-$x10=$_POST["text"][9];
-if($x10=="")
-{
-$x10=0;
-}
+	<body>
+		<?php
+		$conexion = mysql_connect( "localhost", "root", "" )or die( "Error de Conexion" );
+		mysql_select_db( "facturacion", $conexion )or die( "Error de Conexion a la BD" );
 
-$y1=$_POST["producto"][0];
-$y2=$_POST["producto"][1];
-$y3=$_POST["producto"][2];
-$y4=$_POST["producto"][3];
-$y5=$_POST["producto"][4];
-$y6=$_POST["producto"][5];
-$y7=$_POST["producto"][6];
-$y8=$_POST["producto"][7];
-$y9=$_POST["producto"][8];
-$y10=$_POST["producto"][9];
+		$x1 = $_POST[ "text" ][ 0 ];
+		if ( $x1 == "" ) {
+			$x1 = 0;
+		}
+		$x2 = $_POST[ "text" ][ 1 ];
+		if ( $x2 == "" ) {
+			$x2 = 0;
+		}
+		$x3 = $_POST[ "text" ][ 2 ];
+		if ( $x3 == "" ) {
+			$x3 = 0;
+		}
+		$x4 = $_POST[ "text" ][ 3 ];
+		if ( $x4 == "" ) {
+			$x4 = 0;
+		}
+		$x5 = $_POST[ "text" ][ 4 ];
+		if ( $x5 == "" ) {
+			$x5 = 0;
+		}
+		$x6 = $_POST[ "text" ][ 5 ];
+		if ( $x6 == "" ) {
+			$x6 = 0;
+		}
+		$x7 = $_POST[ "text" ][ 6 ];
+		if ( $x7 == "" ) {
+			$x7 = 0;
+		}
+		$x8 = $_POST[ "text" ][ 7 ];
+		if ( $x8 == "" ) {
+			$x8 = 0;
+		}
+		$x9 = $_POST[ "text" ][ 8 ];
+		if ( $x9 == "" ) {
+			$x9 = 0;
+		}
+		$x10 = $_POST[ "text" ][ 9 ];
+		if ( $x10 == "" ) {
+			$x10 = 0;
+		}
 
-$FACTURAS_TIPO=$_POST["FACTURAS_TIPO"];
+		$y1 = $_POST[ "producto" ][ 0 ];
+		$y2 = $_POST[ "producto" ][ 1 ];
+		$y3 = $_POST[ "producto" ][ 2 ];
+		$y4 = $_POST[ "producto" ][ 3 ];
+		$y5 = $_POST[ "producto" ][ 4 ];
+		$y6 = $_POST[ "producto" ][ 5 ];
+		$y7 = $_POST[ "producto" ][ 6 ];
+		$y8 = $_POST[ "producto" ][ 7 ];
+		$y9 = $_POST[ "producto" ][ 8 ];
+		$y10 = $_POST[ "producto" ][ 9 ];
 
-$precio1=$x1 * $y1;
-$precio2=$x2 * $y2;
-$precio3=$x3 * $y3;
-$precio4=$x4 * $y4;
-$precio5=$x5 * $y5;
-$precio6=$x6 * $y6;
-$precio7=$x7 * $y7;
-$precio8=$x8 * $y8;
-$precio9=$x9 * $y9;
-$precio10=$x10 * $y10;
-/*---------------------------------------------ultimo id de factura------------------------------------------*/
+		$FACTURAS_TIPO = $_POST[ "FACTURAS_TIPO" ];
 
-$MAX_ID="SELECT MAX(`ID_FACTURAS`) AS ultima_factura FROM `facturas`;";
-$query=mysql_query($MAX_ID,$conexion) or die("Error de Select MAX");
-while($row=mysql_fetch_array($query))
-    {
-        $id_factura=$row['ultima_factura']+1;
-    }
-/*--------------------------------------------------detalle--------------------------------------------------*/
+		$precio1 = $x1 * $y1;
+		$precio2 = $x2 * $y2;
+		$precio3 = $x3 * $y3;
+		$precio4 = $x4 * $y4;
+		$precio5 = $x5 * $y5;
+		$precio6 = $x6 * $y6;
+		$precio7 = $x7 * $y7;
+		$precio8 = $x8 * $y8;
+		$precio9 = $x9 * $y9;
+		$precio10 = $x10 * $y10;
+		/*---------------------------------------------ultimo id de factura------------------------------------------*/
 
-$sql="INSERT INTO `detalles` 
+		$MAX_ID = "SELECT MAX(`ID_FACTURAS`) AS ultima_factura FROM `facturas`;";
+		$query = mysql_query( $MAX_ID, $conexion )or die( "Error de Select MAX" );
+		while ( $row = mysql_fetch_array( $query ) ) {
+			$id_factura = $row[ 'ultima_factura' ] + 1;
+		}
+		/*--------------------------------------------------detalle--------------------------------------------------*/
+
+		$sql = "INSERT INTO `detalles` 
 (`RELA_FACTURAS`,`RELA_PRODUCTOS`,`DETALLE_CANTIDAD`,`DETALLE_IMPORTE`)
 VALUES 
 ($id_factura,1,$x1,$precio1),
@@ -106,16 +98,18 @@ VALUES
 ($id_factura,8,$x8,$precio8),
 ($id_factura,9,$x9,$precio9),
 ($id_factura,10,$x10,$precio10);";
-mysql_query($sql,$conexion) or die("Error de SQL");
+		mysql_query( $sql, $conexion )or die( "Error de SQL" );
 
 
-/*--------------------------------------------------cabecera--------------------------------------------------*/
+		/*--------------------------------------------------cabecera--------------------------------------------------*/
 
-$total=$precio1+$precio2+$precio3+$precio4+$precio5+$precio6+$precio7+$precio8+$precio9+$precio10;
-$sql_factura="INSERT INTO `facturas` VALUES($id_factura,1,CURDATE(),'$FACTURAS_TIPO',$total);";
-mysql_query($sql_factura,$conexion) or die("Error de SQL");
-echo "Factura generada correctamente.";
-print "<meta http-equiv=Refresh content=\"2 ; url=facturas_formulario.php\">"
-?>
-</body></div>
+		$total = $precio1 + $precio2 + $precio3 + $precio4 + $precio5 + $precio6 + $precio7 + $precio8 + $precio9 + $precio10;
+		$sql_factura = "INSERT INTO `facturas` VALUES($id_factura,1,CURDATE(),'$FACTURAS_TIPO',$total);";
+		mysql_query( $sql_factura, $conexion )or die( "Error de SQL" );
+		echo "Factura generada correctamente.";
+		print "<meta http-equiv=Refresh content=\"2 ; url=facturas_formulario.php\">"
+		?>
+	</body>
+</div>
+
 </html>
