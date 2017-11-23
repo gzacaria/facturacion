@@ -5,6 +5,7 @@
 	<title>Control M&oacute;dulo Mantenimiento Personas</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<link rel="stylesheet" href="../estilos/estilos_login.css">
+	<div id="menu"><?php include '../menu.php'; ?></div>
 </head>
 
 <div class="body">

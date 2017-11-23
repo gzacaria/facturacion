@@ -3,6 +3,7 @@
 <head>
 	<title>Control Alta Personas</title>
 	<link rel="stylesheet" href="../estilos/estilos_login.css">
+	<div id="menu"><?php include '../menu.php'; ?></div>
 </head>
 
 <div class="body">

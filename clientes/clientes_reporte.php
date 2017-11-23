@@ -5,6 +5,7 @@
 	<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_reporte.css">
 	<link rel="stylesheet" href="../estilos/estilos_login.css">
 	<title>Reporte de Personas</title>
+	<div id="menu"><?php include '../menu.php'; ?></div>
 	<div class="header">
 		<h1 align="center">Reporte de Clientes</h1>
 	</div>

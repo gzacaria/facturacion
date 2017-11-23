@@ -7,6 +7,7 @@
 	<script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
 	<script type="text/javascript" src="../jquery.easyui.min.js"></script>
 	<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
+	<div id="menu"><?php include '../menu.php'; ?></div>
 </head>
 
 <div class="body">

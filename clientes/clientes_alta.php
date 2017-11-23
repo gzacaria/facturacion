@@ -3,6 +3,7 @@
 <head>
 	<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
 	<title>Controlador Alta</title>
+	<div id="menu"><?php include '../menu.php'; ?></div>
 </head>
 
 <div class="body">

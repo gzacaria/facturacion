@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
 	<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_reporte.css">
 	<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
+	<div id="menu"><?php include '../menu.php'; ?></div>
 	<script type="text/javascript">
 		incremento = 0;
 

@@ -6,6 +6,9 @@
 	<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<title>Reporte de Productos</title>
+	<div id="menu"><?php include '../menu.php'; ?></div>
+	<script src="../jquery-2.1.1.min.js"></script>
+	<script src="menu_activo.js"></script>
 </head>
 
 <div class="body">
@@ -62,7 +65,7 @@
 		echo '</div>';
 		?>
 		<br>
-		<div class="links"><a href="proveedores_formulario.php">Nuevo Proveedor</a>
+		<div class="links"><a href="productos_cargar.php">Nuevo Producto</a>
 		</div>
 	</body>
 </div>

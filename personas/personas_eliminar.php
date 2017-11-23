@@ -4,7 +4,10 @@
 <head>
 	<title>Control M&oacute;dulo Eliminaci&oacute;n Personas</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css" </head>
+	<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
+	<div id="menu"><?php include '../menu.php'; ?></div>
+</head>
+	
 
 	<div class="body">
 

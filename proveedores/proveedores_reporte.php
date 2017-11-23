@@ -6,6 +6,7 @@
 	<LINK REL="stylesheet" TYPE="text/css" HREF="../estilos/estilos_login.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<title>Reporte de Proveedores</title>
+	<div id="menu"><?php include '../menu.php'; ?></div>
 </head>
 
 <div class="body">

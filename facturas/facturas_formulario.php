@@ -4,6 +4,7 @@
 	<title>M&oacute;dulo Crear Facturas</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
 	<link rel="stylesheet" href="../estilos/estilos_login.css">
+	<div id="menu"><?php include '../menu.php'; ?></div>
 	<script type="text/javascript">
 		icremento = 0;
 

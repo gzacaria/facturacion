@@ -5,6 +5,7 @@
 	<title>M&oacute;dulo de Carga de Clientes</title>
 	<link rel="stylesheet" href="../estilos/estilos_login.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<div id="menu"><?php include '../menu.php'; ?></div>
 </head>
 
 <div class="body">
