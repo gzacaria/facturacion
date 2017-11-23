@@ -1,0 +1,127 @@
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat center center;
+}
+.icon-add{
+	background:url('icons/edit_add.png') no-repeat center center;
+}
+.icon-edit{
+	background:url('icons/pencil.png') no-repeat center center;
+}
+.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat center center;
+}
+.icon-save{
+	background:url('icons/filesave.png') no-repeat center center;
+}
+.icon-cut{
+	background:url('icons/cut.png') no-repeat center center;
+}
+.icon-ok{
+	background:url('icons/ok.png') no-repeat center center;
+}
+.icon-no{
+	background:url('icons/no.png') no-repeat center center;
+}
+.icon-cancel{
+	background:url('icons/cancel.png') no-repeat center center;
+}
+.icon-reload{
+	background:url('icons/reload.png') no-repeat center center;
+}
+.icon-search{
+	background:url('icons/search.png') no-repeat center center;
+}
+.icon-print{
+	background:url('icons/print.png') no-repeat center center;
+}
+.icon-help{
+	background:url('icons/help.png') no-repeat center center;
+}
+.icon-undo{
+	background:url('icons/undo.png') no-repeat center center;
+}
+.icon-redo{
+	background:url('icons/redo.png') no-repeat center center;
+}
+.icon-back{
+	background:url('icons/back.png') no-repeat center center;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat center center;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat center center;
+}
+.icon-filter{
+	background:url('icons/filter.png') no-repeat center center;
+}
+
+
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat center center;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat center center;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat center center;
+}
+
+.icon-logo{
+	background:url('icons/logo.png') no-repeat center center;
+}
+.icon-farmacia{
+	background:url('icons/farmacia.png') no-repeat center center;
+}
+.icon-facturacion{
+	background:url('icons/facturacion.png') no-repeat center center;
+}
+.icon-afiliado{
+	background:url('icons/afiliado.png') no-repeat center center;
+}
+.icon-new{
+	background:url('icons/new.png') no-repeat center center;
+}
+.icon-nuevo-registro{
+	background:url('icons/nuevo.png') no-repeat center center;
+}
+.icon-centrar{
+	background:url('icons/centrar.png') no-repeat center center;
+}
+
+.icon-impresora{
+	background:url('icons/impresora.png') no-repeat center center;
+}
+
+.icon-vista-previa{
+	background:url('icons/vista-previa.png') no-repeat center center;
+}
+.icon-nodo-tree{
+	background:url('icons/tree-nodo.png') no-repeat center center;
+}
+.icon-pantalla-completa{
+	background:url('icons/pantalla-completa.png') no-repeat center center;
+}
+
+.icon-cerrar-sesion{
+	background:url('icons/cerrar-sesion.png') no-repeat center center;
+}
+.icon-candado{
+	background:url('icons/icon-candado.png') no-repeat center center;
+}
+
+.icon-configuracion{
+	background:url('icons/icon-configuracion.png') no-repeat center center;
+}
+
+.icon-informe{
+	background:url('icons/icon-informe.png') no-repeat center center;
+}
+
+.icon-efectivo{
+	background:url('icons/efectivo.png') no-repeat center center;
+}
+
+.icon-cuenta{
+	background:url('icons/cuenta.png') no-repeat center center;
+}
